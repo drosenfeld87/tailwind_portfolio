@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
       fontFamily: {
-      header: ["Raleway", "sans-serif"],
-      body: ["Open Sans", "sans-serif"],
+      header: ["Montserrat", "sans-serif"],
+      body: ["Esteban", "serif"],
     },
 
     screens: {

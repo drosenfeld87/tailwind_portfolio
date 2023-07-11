@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:"Esteban", Arial, "Noto Sans", serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1150,11 +1150,11 @@ video {
 }
 
 .font-body {
-  font-family: Open Sans, sans-serif;
+  font-family: Esteban, serif;
 }
 
 .font-header {
-  font-family: Raleway, sans-serif;
+  font-family: Monstserrat, sans-serif;
 }
 
 .text-2xl {

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -26,20 +26,31 @@
           document.getElementById('navigation').innerHTML = data;
         });
     </script>
-    <div class="relative py-8 bg-eerieblack">
-      <div class="absolute inset-0 max-h-screen"></div>
-      <div class="container relative pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
-        <div class="flex flex-col items-center justify-center lg:flex-row">
-          <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-            <h1 class="text-center font-header text-4xl text-white sm:text-5xl md:text-8xl">Exponential IT Readiness Diagnostic Report</h1>
-          </div>
-        </div>
+
+<div class="relative py-8 bg-eerieblack">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="/img/eit-banner.png" alt="Background image" class="w-full h-full object-cover opacity-25" />
+  </div>
+
+  <!-- Overlay Content -->
+  <div class="relative container pt-20">
+    <div class="flex flex-col items-center justify-center lg:flex-row">
+      <!-- Text Content -->
+      <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0 text-center lg:text-left">
+        <h1 class="font-header text-white sm:text-5xl md:text-8xl">
+          Exponential IT Readiness Diagnostic Report
+        </h1>
       </div>
     </div>
+  </div>
+</div>
+
+
     <div class="container py-16 md:py-20">
-      <div class="grid md:grid-cols-2 gap-y-8 md:gap-x-8">
-        <!-- Left Column -->
-        <div>
+      <div class="flex flex-col lg:flex-row gap-y-8 lg:gap-x-8">
+        <!-- First Column -->
+        <div class="w-full lg:w-1/2 md:w-2/3 lg:order-1 lg:flex-1">
           <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
             Overview
           </h3>
@@ -47,8 +58,9 @@
             The Exponential IT Readiness Diagnostic Report is a framework defined by Info-Tech Research Group to advise IT leaders on how to elevate their maturity and close the gap between the exponential progression of technological change, and  IT's ability to successfully manage that change.​ This report is generated from the survey results taken by IT leaders and their counterparts.
           </p>
         </div>
-        <!-- Right Column -->
-        <div>
+
+        <!-- Second Column -->
+        <div class="lg:order-2 lg:flex-1 lg:ml-auto">
           <h4 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-darkpink lg:text-xl">
             My role
           </h4>
@@ -70,6 +82,7 @@
           </ul>
         </div>
       </div>
+
     </div>
 
 

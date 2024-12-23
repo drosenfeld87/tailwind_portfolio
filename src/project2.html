@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Portfolio | Debbie Rosenfeld</title>
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+  <!-- <link as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap" rel="preload" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:wght@300;400;500;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+  <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+  <body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+    <div id="main" class="relative">
+      <div id="navigation"></div>
+      <script>
+        fetch('navigation.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navigation').innerHTML = data;
+          });
+      </script>
+      <div class="relative py-8 bg-eerieblack">
+        <div class="absolute inset-0 max-h-screen"></div>
+        <div class="container relative pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
+          <div class="flex flex-col items-center justify-center lg:flex-row">
+            <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+              <h1 class="text-center font-header text-4xl text-white sm:text-5xl md:text-8xl">Hey. I'm Debbie<br>I'm a product designer that codes.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="/assets/js/main.js"></script>
+
+
+  </body>
+
+  </html>
+

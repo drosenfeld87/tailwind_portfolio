@@ -87,13 +87,19 @@
 
         <!-- Right Side Content (Image) -->
         <div class="w-full lg:w-1/2 flex justify-center lg:pl-8 pt-8">
-          <img src="/img/eit-banner.png" alt="Overview Image" class="w-full max-w-md opacity-75" />
+          <img src="/img/eit-image.png" alt="Overview Image" class="w-full max-w-md opacity-75 transform translate-x-full transition-all duration-1000 ease-out slide-in-image" />
         </div>
       </div>
+      <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+        Goals
+      </h3>
+      <p class="pt-6 font-body leading-relaxed text-grey-20">
+        The goal of the project is to design a report based on a survey assessing an organization's readiness for exponential technologies. As a designer, the focus is on creating a report that provides insights into both organizational and IT readiness for transformation. The report highlights opportunities, risks, and stakeholder insights, while also assessing IT leaders' confidence in supporting transformation. It helps stakeholders understand the need for change, set priorities, and track progress annually through benchmarking, ultimately supporting IT teams and leadership in adopting exponential IT.
+      </p>
+      <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+        Process
+      </h3>
     </div>
-
-
-    <script src="/assets/js/main.js"></script>
 
     <!-- Project Description -->
     <!-- <section class="space-y-8"> -->
@@ -133,6 +139,15 @@
     </section>
   </div>
 
+    <script src="/assets/js/main.js"></script>
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          document.querySelector('.slide-in-image').classList.remove('translate-x-full');
+        }, 100); // Delay the animation to allow the page to load first
+      };
+    </script>
 </body>
 
 </html>
+

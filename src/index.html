@@ -65,229 +65,196 @@
         });
     </script>
 
-<div class="relative min-h-screen py-16 bg-eerieblack flex items-center">
-  <div class="absolute inset-0"></div>
-  <div class="container relative">
-    <!-- Hero Heading -->
-    <div class="flex flex-col items-center justify-center lg:flex-row">
-      <h1 class="text-center font-header text-4xl text-white sm:text-5xl md:text-8xl px-6 py-6">
-        Hey. I'm Debbie
-      </h1>
+    <div class="relative min-h-screen py-16 bg-eerieblack flex items-center">
+      <div class="absolute inset-0"></div>
+      <div class="container relative">
+        <div class="flex flex-col items-center justify-center lg:flex-row pt-40">
+          <!-- First Section (Centered Heading) -->
+          <h1 class="text-center font-header text-4xl text-white sm:text-5xl md:text-8xl px-6 py-6">
+            Hey. I'm Debbie
+          </h1>
+        </div>
+
+        <div class="relative font-inter antialiased">
+          <!-- Second Section (Text and List) -->
+          <div class="relative flex flex-col justify-center overflow-hidden">
+            <div class="w-full max-w-6xl mx-auto px-10 py-8">
+              <div class="text-center">
+                <div class="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200 px-6">
+                  I'm a
+                  <span class="text-primary inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+                    <ul class="block animate-text-slide text-left leading-tight [&_li]:block px-2">
+                      <li>Product Designer</li>
+                      <li>UI Designer</li>
+                      <li>Front End Developer</li>
+                      <li>Graphic Designer</li>
+                      <li>Web Designer</li>
+                      <li aria-hidden="true">Nice Person</li>
+                    </ul>
+                  </span>
+                  <div class="flex items-center justify-center pt-20">
+                    <a href="#portfolio" class="text-3xl p-2 group border w-fit grid relative overflow-hidden">
+                      <div class="absolute inset-0 bg-transparent transition-colors duration-300 ease-in-out group-hover:bg-pink-600"></div>
+                      <div class="[grid-area:1/1] flex items-center justify-center h-10 w-10 transform transition-transform duration-300 ease-in-out translate-y-10 group-hover:translate-y-0 text-white group-hover:text-black">
+                        ↓
+                      </div>
+                      <div class="[grid-area:1/1] flex items-center justify-center h-10 w-10 transform transition-transform duration-300 ease-in-out delay-150 group-hover:-translate-y-10 text-white group-hover:text-black">
+                        ↓
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Hero Subheading and List -->
-    <div class="relative font-inter antialiased">
-      <div class="relative flex flex-col justify-center overflow-hidden">
-        <div class="w-full max-w-6xl mx-auto px-10 py-8">
+    <div class="container py-16 md:py-20" id="portfolio">
+      <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+        Notable Projects
+      </h2>
+
+      <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
           <div class="text-center">
-            <div class="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200 px-6 py-4">
-              I'm a
-              <span class="text-primary inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
-                <ul class="block animate-text-slide text-left leading-tight [&_li]:block px-2">
-                  <li>Product Designer</li>
-                  <li>UI Designer</li>
-                  <li>Front End Developer</li>
-                  <li>Graphic Designer</li>
-                  <li>Web Designer</li>
-                  <li aria-hidden="true">Nice Person</li>
-                </ul>
-              </span>
-            </div>
+            <a href="project1.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+            <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-darkpink lg:text-xl">
+              EXPONENTIAL IT READINESS DIAGNOSTIC REPORT
+            </h3>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="text-3xl p-2 group border w-fit grid relative overflow-hidden">
-      <!-- Static Background Layer -->
-      <div class="absolute inset-0 bg-transparent transition-colors duration-300 group-hover:bg-pink-600"></div>
-
-      <!-- First Arrow (Moving Down) -->
-      <div class="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition-transform duration-500 ease-in-out translate-y-10 group-hover:translate-y-0 text-white group-hover:text-black">
-        ↓
-      </div>
-
-      <!-- Second Arrow (Moving Up) -->
-      <div class="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition-transform duration-500 ease-in-out delay-150 group-hover:-translate-y-10 text-white group-hover:text-black">
-        ↓
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-          <!-- <div class="container py-16 md:py-20 bg-white" id="portfolio">
-            <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              Here's what I'm good at
-            </h2>
-
-            <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-              <a href="project1.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <h3 class="text-2xl">Product design</h3>
-              </a>
-              <a href="project2.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <h3 class="text-2xl">UI design</h3>
-              </a>
-              <a href="project3.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <h3 class="text-2xl">Front end development</h3>
-              </a>
-              <a href="project4.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <h3 class="text-2xl">graphic design</h3>
-              </a>
-              <a href="project5.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <h3 class="text-2xl">project management</h3>
-              </a>
-              <a href="project6.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <h3 class="text-2xl">design/dev handoff</h3>
-              </a>
-            </div>
-          </div> -->
-
-          <div class="container py-16 md:py-20" id="services">
-            <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              Notable Projects
-            </h2>
-
-            <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
-              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-                <div class="text-center">
-                  <a href="project1.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-darkpink lg:text-xl">
-                    EXPONENTIAL IT READINESS DIAGNOSTIC REPORT
-                  </h3>
-                  </a>
-                </div>
-              </div>
-              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                  <div class="hidden group-hover:block">
-                    <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
-                  </div>
-                </div>
-                <div class="text-center">
-                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl">
-                    ITRG MEMBERSHIP TRIAL EXPERIENCE
-                  </h3>
-                </div>
-              </div>
-              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                  <div class="hidden group-hover:block">
-                    <img src="/assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
-                  </div>
-                  <div class="block group-hover:hidden">
-                    <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
-                  </div>
-                </div>
-                <div class="text-center">
-                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl">
-                    GEN AI SECURITY RISKS THOUGHT MODEL
-                  </h3>
-                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-
-                  </p>
-                </div>
-              </div>
-              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                  <div class="hidden group-hover:block">
-                    <img src="/assets/img/icon-design-white.svg" alt="Theme Design icon" />
-                  </div>
-                  <div class="block group-hover:hidden">
-                    <img src="/assets/img/icon-design-black.svg" alt="Theme Design icon" />
-                  </div>
-                </div>
-                <div class="text-center">
-                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl">
-                    PROJECT SUCCESS ASSURANCE
-                  </h3>
-                </div>
-              </div>
-              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                  <div class="hidden group-hover:block">
-                    <img src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
-                  </div>
-                  <div class="block group-hover:hidden">
-                    <img src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
-                  </div>
-                </div>
-                <div class="text-center">
-                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
-                    CUSTOMER CASE STUDIES
-                  </h3>
-                </div>
-              </div>
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
             </div>
           </div>
-
-          <div class="bg-grey-50" id="about">
-            <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
-              <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-                <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-                  Who is this person?
-                </h2>
-                <h4 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                  You've made it this far and are probably expecting an explanation
-                </h4>
-                <p class="pt-6 font-body leading-relaxed text-grey-20">
-                  I've been desigining in a wide range of roles for the past 15 years. I started with photography and photo editing,
-                  then moved into graphic design for print, then digital marketing design. In 2017 I realized I wanted to move away from
-                  print and digital design to become more web-focused. So I did a coding bootcamp, then got a job doing web design form
-                  my experience there. While working there, I saw I needed to get a better understanding of UI/UX in order to create better
-                  websites and apps, so I got funding to enroll in a part-time UI/UX bootcamp. In late 2019 I landed my current job as a
-                  product designer, which is the space I'm growing my career in.
-
-                  I live in Toronto, Canada, which is the place I call home. When I'm not working, I play bass guitar, draw
-                  graffiti-style artwork, and read horror novels.
-                  Here's a recent photo of me so you know I'm not a robot.
-                </p>
-              </div>
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl">
+              ITRG MEMBERSHIP TRIAL EXPERIENCE
+            </h3>
+          </div>
+        </div>
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="/assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
+            </div>
+            <div class="block group-hover:hidden">
+              <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
             </div>
           </div>
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl">
+              GEN AI SECURITY RISKS THOUGHT MODEL
+            </h3>
+            <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
 
-          <div class="container py-16 md:py-20" id="contact">
-            <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              Contact
-            </h2>
-            <form class="mx-auto w-full pt-10 sm:w-3/4">
-              <div class="flex flex-col md:flex-row">
-                <input class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5" placeholder="Name" type="text" id="name" />
-                <input class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5" placeholder="Email" type="text" id="email" />
-              </div>
-              <textarea class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8" placeholder="Message" id="message" cols="30" rows="10"></textarea>
-              <button class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20">
-                Send
-                <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
-              </button>
-            </form>
-          </div>
-
-        <div class="bg-primary">
-          <div class="container flex flex-col justify-between py-6 sm:flex-row">
-            <p class="text-center font-body text-white md:text-left">
-              © Copyright 2025. Debbie Rosenfeld
             </p>
-            <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-              <a href="/">
-                <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
-                <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
-                <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
-                <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-              </a>
-            </div>
           </div>
         </div>
-
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="/assets/img/icon-design-white.svg" alt="Theme Design icon" />
+            </div>
+            <div class="block group-hover:hidden">
+              <img src="/assets/img/icon-design-black.svg" alt="Theme Design icon" />
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl">
+              PROJECT SUCCESS ASSURANCE
+            </h3>
+          </div>
+        </div>
+        <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+            <div class="hidden group-hover:block">
+              <img src="/assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
+            </div>
+            <div class="block group-hover:hidden">
+              <img src="/assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+              CUSTOMER CASE STUDIES
+            </h3>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <script src="js/main.js" defer></script>
+    <div class="bg-grey-50" id="about">
+      <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+        <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+          <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+            Who is this person?
+          </h2>
+          <h4 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            You've made it this far and are probably expecting an explanation
+          </h4>
+          <p class="pt-6 font-body leading-relaxed text-grey-20">
+            I've been desigining in a wide range of roles for the past 15 years. I started with photography and photo editing,
+            then moved into graphic design for print, then digital marketing design. In 2017 I realized I wanted to move away from
+            print and digital design to become more web-focused. So I did a coding bootcamp, then got a job doing web design form
+            my experience there. While working there, I saw I needed to get a better understanding of UI/UX in order to create better
+            websites and apps, so I got funding to enroll in a part-time UI/UX bootcamp. In late 2019 I landed my current job as a
+            product designer, which is the space I'm growing my career in.
+
+            I live in Toronto, Canada, which is the place I call home. When I'm not working, I play bass guitar, draw
+            graffiti-style artwork, and read horror novels.
+            Here's a recent photo of me so you know I'm not a robot.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-16 md:py-20" id="contact">
+      <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+        Contact
+      </h2>
+      <form class="mx-auto w-full pt-10 sm:w-3/4">
+        <div class="flex flex-col md:flex-row">
+          <input class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5" placeholder="Name" type="text" id="name" />
+          <input class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5" placeholder="Email" type="text" id="email" />
+        </div>
+        <textarea class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+        <button class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20">
+          Send
+          <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="bg-primary">
+      <div class="container flex flex-col justify-between py-6 sm:flex-row">
+        <p class="text-center font-body text-white md:text-left">
+          © Copyright 2025. Debbie Rosenfeld
+        </p>
+        <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+          <a href="/">
+            <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+          </a>
+          <a href="/" class="pl-4">
+            <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+          </a>
+          <a href="/" class="pl-4">
+            <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+          </a>
+          <a href="/" class="pl-4">
+            <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
 
 
   </body>

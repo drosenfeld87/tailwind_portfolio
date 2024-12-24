@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:wght@300;400;500;800;900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
   <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,218 +24,83 @@
             fontFamily: {
               inter: ['Inter', 'sans-serif'],
             },
+            animation: {
+              'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+            },
+            keyframes: {
+              'text-slide': {
+                '0%, 16%': {
+                  transform: 'translateY(0%)',
+                },
+                '20%, 36%': {
+                  transform: 'translateY(-16.66%)',
+                },
+                '40%, 56%': {
+                  transform: 'translateY(-33.33%)',
+                },
+                '60%, 76%': {
+                  transform: 'translateY(-50%)',
+                },
+                '79%, 85%': {
+                  transform: 'translateY(-66.66%)',
+                },
+                '100%': {
+                  transform: 'translateY(-83.33%)',
+                },
+              },
+            },
           },
         },
       };
     </script>
 </head>
-  <body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
-    <div id="main" class="relative">
-          <!-- Include this in your page -->
-          <div id="navigation"></div>
-          <script>
-            fetch('navigation.html')
-              .then(response => response.text())
-              .then(data => {
-                document.getElementById('navigation').innerHTML = data;
-              });
-                  tailwind.config = {
-                    theme: {
-                    extend: {
-                    fontFamily: {
-                    inter: ['Inter', 'sans-serif'],
-                    },
-                  animation: {
-                    'text-slide-2': 'text-slide-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                  'text-slide-3': 'text-slide-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                  'text-slide-4': 'text-slide-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                  'text-slide-5': 'text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                  'text-slide-6': 'text-slide-6 15s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                  'text-slide-7': 'text-slide-7 17.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                  'text-slide-8': 'text-slide-8 20s cubic-bezier(0.83, 0, 0.17, 1) infinite',
-                    },
-                  keyframes: {
-                    'text-slide-2': {
-                    '0%, 40%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '50%, 90%': {
-                    transform: 'translateY(-33.33%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-66.66%)',
-                            },
-                        },
-                  'text-slide-3': {
-                    '0%, 26.66%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '33.33%, 60%': {
-                    transform: 'translateY(-25%)',
-                            },
-                  '66.66%, 93.33%': {
-                    transform: 'translateY(-50%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-75%)',
-                            },
-                        },
-                  'text-slide-4': {
-                    '0%, 20%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '25%, 45%': {
-                    transform: 'translateY(-20%)',
-                            },
-                  '50%, 70%': {
-                    transform: 'translateY(-40%)',
-                            },
-                  '75%, 95%': {
-                    transform: 'translateY(-60%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-80%)',
-                            },
-                        },
-                  'text-slide-5': {
-                    '0%, 16%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '20%, 36%': {
-                    transform: 'translateY(-16.66%)',
-                            },
-                  '40%, 56%': {
-                    transform: 'translateY(-33.33%)',
-                            },
-                  '60%, 76%': {
-                    transform: 'translateY(-50%)',
-                            },
-                  '80%, 96%': {
-                    transform: 'translateY(-66.66%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-83.33%)',
-                            },
-                        },
-                  'text-slide-6': {
-                    '0%, 13.33%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '16.66%, 30%': {
-                    transform: 'translateY(-14.28%)',
-                            },
-                  '33.33%, 46.66%': {
-                    transform: 'translateY(-28.57%)',
-                            },
-                  '50%, 63.33%': {
-                    transform: 'translateY(-42.85%)',
-                            },
-                  '66.66%, 80%': {
-                    transform: 'translateY(-57.14%)',
-                            },
-                  '83.33%, 96.66%': {
-                    transform: 'translateY(-71.42%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-85.71%)',
-                            },
-                        },
-                  'text-slide-7': {
-                    '0%, 11.43%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '14.28%, 25.71%': {
-                    transform: 'translateY(-12.5%)',
-                            },
-                  '28.57%, 40%': {
-                    transform: 'translateY(-25%)',
-                            },
-                  '42.85%, 54.28%': {
-                    transform: 'translateY(-37.5%)',
-                            },
-                  '57.14%, 68.57%': {
-                    transform: 'translateY(-50%)',
-                            },
-                  '71.42%, 82.85%': {
-                    transform: 'translateY(-62.5%)',
-                            },
-                  '85.71%, 97.14%': {
-                    transform: 'translateY(-75%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-87.5%)',
-                            },
-                        },
-                  'text-slide-8': {
-                    '0%, 10%': {
-                    transform: 'translateY(0%)',
-                            },
-                  '12.5%, 22.5%': {
-                    transform: 'translateY(-11.11%)',
-                            },
-                  '25%, 35%': {
-                    transform: 'translateY(-22.22%)',
-                            },
-                  '37.5%, 47.5%': {
-                    transform: 'translateY(-33.33%)',
-                            },
-                  '50%, 60%': {
-                    transform: 'translateY(-44.44%)',
-                            },
-                  '62.5%, 72.5%': {
-                    transform: 'translateY(-55.55%)',
-                            },
-                  '75%, 85%': {
-                    transform: 'translateY(-66.66%)',
-                            },
-                  '87.5%, 97.5%': {
-                    transform: 'translateY(-77.77%)',
-                            },
-                  '100%': {
-                    transform: 'translateY(-88.88%)',
-                            },
-                        }
-                    },
-                },
-            },
-        };
-          </script>
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+  <div id="main" class="relative">
+    <div id="navigation"></div>
+    <script>
+      fetch('navigation.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navigation').innerHTML = data;
+        });
+    </script>
 
+    <div class="relative py-8 bg-eerieblack">
+      <div class="absolute inset-0"></div>
+      <div class="container relative">
+        <!-- Hero Heading -->
+        <div class="flex flex-col items-center justify-center lg:flex-row">
+          <h1 class="text-center font-header text-4xl text-white sm:text-5xl md:text-8xl px-4 py-4">
+            Hey. I'm Debbie
+          </h1>
+        </div>
 
-          <div class="relative py-8 bg-eerieblack">
-            <div class="absolute inset-0 max-h-screen"></div>
-            <div class="container relative pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
-              <div class="flex flex-col items-center justify-center lg:flex-row">
-                <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-                  <h1 class="text-center font-header text-4xl text-white sm:text-5xl md:text-8xl">Hey. I'm Debbie<br>I'm a product designer that codes.</h1>
+        <!-- Hero Subheading and List -->
+        <div class="relative font-inter antialiased">
+          <div class="relative flex flex-col justify-center overflow-hidden">
+            <div class="w-full max-w-6xl mx-auto px-10 py-8">
+              <div class="text-center">
+                <div class="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200 px-4 py-2">
+                  I'm a
+                  <span class="text-primary inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+                    <ul class="block animate-text-slide text-left leading-tight [&_li]:block px-4">
+                      <li>Product Designer</li>
+                      <li>UI Designer</li>
+                      <li>Front End Developer</li>
+                      <li>Graphic Designer</li>
+                      <li>Web Designer</li>
+                      <li aria-hidden="true">Nice Person</li>
+                    </ul>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="relative font-inter antialiased">
-
-            <main class="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
-              <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
-                <div class="text-center">
-
-                  <!-- Sliding Text animation  -->
-                  <div class="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">I'm a <span class="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
-                      <ul class="block animate-text-slide text-left leading-tight [&_li]:block">
-                        <li>Product Designer</li>
-                        <li>UI Designer</li>
-                        <li>Front End Developer</li>
-                        <li>Graphic Designer</li>
-                        <li aria-hidden="true">Finance</li>
-                      </ul>
-                    </span></div>
-                  <!-- End: Sliding Text animation  -->
-
-                </div>
-
-              </div>
-
-          <div class="container py-16 md:py-20" id="portfolio">
+          <!-- <div class="container py-16 md:py-20 bg-white" id="portfolio">
             <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
               Here's what I'm good at
             </h2>
@@ -242,7 +110,6 @@
                 <h3 class="text-2xl">Product design</h3>
               </a>
               <a href="project2.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
-                <!-- <img src="/img/case-studies-mockup.jpg" class="w-full shadow" alt="portfolio image" /> -->
                 <h3 class="text-2xl">UI design</h3>
               </a>
               <a href="project3.html" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
@@ -258,7 +125,7 @@
                 <h3 class="text-2xl">design/dev handoff</h3>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <div class="container py-16 md:py-20" id="services">
             <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
@@ -404,7 +271,7 @@
 
       </div>
 
-      <script src="/assets/js/main.js"></script>
+      <script src="js/main.js" defer></script>
 
 
   </body>

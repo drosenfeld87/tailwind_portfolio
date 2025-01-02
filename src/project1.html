@@ -27,16 +27,13 @@
         });
     </script>
 
-    <div class="relative py-8 bg-eerieblack">
-      <!-- Background Image inside the black background -->
-      <div class="absolute inset-0">
-        <!-- <img src="/img/eit-banner.png" alt="Transparent decorative image" class="opacity-25" /> -->
-      </div>
+    <div class="relative py-8 bg-eerieblack max-h-full">
+      <!-- Background Image with opacity -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('/img/eit-pages.png');"></div>
 
       <!-- Main Content inside the container -->
-      <div class="container relative z-10">
-        <div class="flex flex-col items-left items-center justify-left lg:flex-row">
-          <!-- Text Content -->
+      <div class="container relative z-10 h-full">
+        <div class="flex flex-col items-center justify-center lg:flex-row">
           <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0 lg:w-1/2">
             <h1 class="text-left font-header text-9xl text-white sm:text-5xl md:text-8xl">
               Exponential IT Readiness Diagnostic Report
@@ -45,6 +42,7 @@
         </div>
       </div>
     </div>
+
     <div class="container py-16 md:py-20">
       <div class="flex flex-col lg:flex-row items-center justify-between w-full">
         <!-- Left Side Content (Text) -->
@@ -95,49 +93,12 @@
 
         </div>
 
-        <!-- Right Side Content (Image) -->
         <div class="w-full lg:w-1/2 flex justify-center lg:pl-8 pt-8">
           <img src="/img/eit-image.png" alt="Overview Image" class="w-full max-w-md opacity-75 transform translate-x-full transition-all duration-1000 ease-out slide-in-image" />
         </div>
       </div>
     </div>
 
-    <!-- Project Description -->
-    <!-- <section class="space-y-8"> -->
-
-      <!-- Situation Section -->
-      <!-- <div> -->
-        <!-- <h2 class="text-2xl font-semibold text-gray-800">Situation</h2>
-        <p class="mt-2 text-gray-600">
-          Describe the situation or problem that prompted the project. Explain the context and challenges.
-        </p>
-      </div> -->
-
-      <!-- Task Section -->
-      <!-- <div>
-        <h2 class="text-2xl font-semibold text-gray-800">Task</h2>
-        <p class="mt-2 text-gray-600">
-          Explain your role and responsibilities in addressing the situation or problem.
-        </p>
-      </div> -->
-
-      <!-- Action Section -->
-      <!-- <div>
-        <h2 class="text-2xl font-semibold text-gray-800">Action</h2>
-        <p class="mt-2 text-gray-600">
-          Detail the steps you took to address the task. Discuss the tools and techniques used.
-        </p>
-      </div> -->
-
-      <!-- Result Section -->
-      <!-- <div>
-        <h2 class="text-2xl font-semibold text-gray-800">Result</h2>
-        <p class="mt-2 text-gray-600">
-          Share the outcome of your actions, including any successes or lessons learned. If possible, use metrics or data.
-        </p>
-      </div> -->
-
-    </section>
   </div>
 
 <script src="js/main.js" defer></script>

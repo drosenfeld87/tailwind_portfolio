@@ -95,4 +95,11 @@ module.exports = {
   },
     plugins: [
   ],
-}
+};
+export default {
+     content: [],
+     theme: {
+        extend: {},
+     },
+     plugins: [require('tailwindcss-motion'), ('tailwindcss-intersect')],
+};

@@ -15,6 +15,105 @@
   <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<!-- Include this in your page -->
-<div id="navigation"></div>
-<script src="js/main.js" defer></script>
+
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+  <div id="main" class="relative">
+    <div id="navigation"></div>
+    <script>
+      fetch('navigation.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navigation').innerHTML = data;
+        });
+    </script>
+    <div class="py-8 bg-eerieblack max-h-full">
+      <div class="container z-10">
+        <div class="flex flex-col items-center justify-center lg:flex-row">
+          <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0 lg:w-1/2">
+            <h1 class="text-left font-header text-9xl text-white sm:text-5xl md:text-8xl">
+              ITRG Membership Trial Experience
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-16 md:py-20">
+      <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+        <!-- Left Side Content (Text) -->
+        <div class="w-full lg:w-1/2 flex flex-col lg:pl-8 pt-8">
+          <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Overview
+          </h3>
+          <p class="pt-6 font-body leading-relaxed text-grey-20">
+            The Request a Demo page is a vital component of Info-Tech Research Group’s website, designed to streamline the process for potential clients to explore Info-Tech’s offerings. The project aimed to create a user-friendly, visually compelling page that communicates the value of Info-Tech’s solutions while driving lead generation. By integrating clear user flows, responsive design, and robust functionality, the page supports Info-Tech’s business objectives by converting interest into actionable engagement.
+          </p>
+          <!-- Left Side Content (Text Blocks) -->
+          <div class="flex flex-wrap justify-start space-x-8">
+            <!-- First Block -->
+            <div class="flex flex-col pt-8 w-full lg:w-1/3">
+              <h4 class="text-lg font-semibold uppercase text-primary group-hover:text-darkpink lg:text-xl">My role</h4>
+              <ul>
+                <li>Product Designer</li>
+                <li>Front end developer</li>
+              </ul>
+            </div>
+
+            <!-- Second Block -->
+            <div class="flex flex-col pt-8 w-full lg:w-1/3">
+              <h4 class="text-lg font-semibold uppercase text-primary group-hover:text-darkpink lg:text-xl">Year</h4>
+              <ul>
+                <li>2023-2024</li>
+              </ul>
+            </div>
+
+            <!-- Third Block -->
+            <div class="flex flex-col pt-8 w-full lg:w-1/3">
+              <h4 class="text-lg font-semibold uppercase text-primary group-hover:text-darkpink lg:text-xl">Company</h4>
+              <ul>
+                <li>Info-Tech Research Group</li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Objective
+          </h3>
+          <p class="pt-6 font-body leading-relaxed text-grey-20">
+            The primary goal of the Request a Demo page was to create an experience that converts user interest into actionable leads. The design needed to minimize friction, guide users seamlessly through the demo request process, and encourage form completion with an intuitive and logical flow.
+           This new member experience serves as a critical touchpoint for potential clients, making it an essential part of Info-Tech’s lead generation strategy. By offering an intuitive, visually appealing design, the page builds trust and encourages users to take the next step. Its alignment of design, UX, and code ensures a cohesive experience that reflects Info-Tech’s professionalism and commitment to delivering extraordinary value.
+          </p>
+          <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Task
+          </h3>
+          <p class="pt-6 font-body leading-relaxed text-grey-20">
+            I collaborated with a UX designer to map out user flows, ensuring an intuitive experience that guides users effortlessly from landing on the page to submitting a demo request. After finalizing the design, I took ownership of coding the front end, focusing on responsiveness, accessibility, and alignment with Info-Tech’s brand standards. I also worked with a back-end developer to integrate functionality, including seamless form submissions and CRM connectivity.</p>
+          <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Action
+          </h3>
+          <p class="pt-6 font-body leading-relaxed text-grey-20">To address these needs, I:</p>
+          <ol>
+            <li>Collaborated with a UX Designer: Together, we developed intuitive user flows to ensure a frictionless experience from landing on the page to submitting the form.</li>
+            <li>Designed the Interface: Focused on a clean, professional layout with clear calls to action, emphasizing the benefits of booking a demo.</li>
+            <li>Coded the Front End: Implemented the design using responsive, accessible code while maintaining consistency with Info-Tech’s design system</li>
+            <li>Integrated Back-End Functionality: Worked closely with a back-end developer to connect the form submission process with Info-Tech’s CRM, ensuring smooth data handling and follow-ups.</li>
+          </ol>
+          <h3 class="pt-6 font-body text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Result
+          </h3>
+          <p class="pt-6 font-body leading-relaxed text-grey-20">
+            The new membership trial experience delivers a polished and user-centric design, providing a seamless and intuitive sign-up experience for prospective clients. By aligning the visual design, user flow, and code functionality, the page ensures users can quickly navigate the process with minimal friction, enhancing their first interaction with the company. The streamlined experience not only reflects professionalism and reliability but also reduces the risk of drop-offs during the sign-up process, thereby increasing the likelihood of lead generation. This optimized user experience directly contributes to business value by fostering positive brand impressions, boosting conversion rates, and ultimately driving higher engagement with potential clients.
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/2 flex justify-center lg:pl-8 pt-8">
+          <img src="/img/trial-mockup.png" alt="free trial page mockup on laptop" class="w-full max-w-md opacity-75 transform translate-x-full transition-all duration-1000 ease-out slide-in-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js" defer></script>
+
+
+</body>
+
+</html>
+
